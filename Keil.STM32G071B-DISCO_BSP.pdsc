@@ -7,8 +7,15 @@
   <repository type="git">https://github.com/MDK-Packs/STM32G071B-DISCO_BSP.git</repository>
 
   <releases>
-    <release version="1.0.0-dev0" date="2021-08-11">
-      Initial release.
+    <release version="1.0.0-dev1" date="2021-09-27">
+      Board description and documentation for STM32G071B-DISCO
+      Synchronized with STM32CubeG0 Firmware Package version V1.5.0
+      Drivers:
+      - Board Drivers and Config files
+      - CMSIS-Driver VIO
+      Example projects:
+      - CMSIS-RTOS2 Blinky (verify the basic tool setup)
+      - CMSIS-RTOS2 Platform (configure the board hardware)
     </release>
   </releases>
 
@@ -177,8 +184,8 @@
       <image small="Images/Discovery_small.jpg"
              large="Images/Discovery_large.jpg" public="true"/>
       <book category="overview"  name="https://www.st.com/en/evaluation-tools/stm32g071b-disco.html" title="STM32 Discovery board"/>
-      <book category="manual"    name="Documents/UM2401.pdf" title="User Manual" public="true"/>
-      <book category="schematic" name="Documents/MB1378.pdf" title="Schematics" public="true"/>
+      <book category="manual"    name="https://www.st.com/resource/en/user_manual/um2401-stm32g0-discovery-kit-for-usb-typec-and-power-delivery-stmicroelectronics.pdf" title="User Manual" public="true"/>
+      <book category="schematic" name="https://www.st.com/resource/en/schematic_pack/mb1378-c02_schematic.pdf" title="Schematics" public="true"/>
       <mountedDevice    deviceIndex="0" Dvendor="STMicroelectronics:13" Dname="STM32G071RBTx"/>
       <compatibleDevice deviceIndex="0" Dvendor="STMicroelectronics:13" DsubFamily="STM32G071"/>
       <feature type="ODbg"      n="1"              name="On-board ST-LINK-V3E"/>

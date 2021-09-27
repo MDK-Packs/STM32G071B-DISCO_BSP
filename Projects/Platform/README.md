@@ -54,7 +54,7 @@ The example project can be re-configured to work on custom hardware. Refer to ["
 |:-----|:-----------------|:----------------------------------------------|:-----
 | PC10 | USART3_TX        | Alternate Function, Speed=Very High           | ST-LINK Virtual COM port (VCP_TX)
 | PC11 | USART3_RX        | Alternate Function, Speed=Very High           | ST-LINK Virtual COM port (VCP_RX)
-} PC8  | vioBUTTON0       | not configured via CubeMX                     | Door Sensor                         |
+} PC8  | vioBUTTON0       | Joystick SELECT, with define VIO_BUTTON_REMAP | User button
 | PC4  | vioJOYup         | not configured via CubeMX                     | Joystic UP
 | PC2  | vioJOYdown       | not configured via CubeMX                     | Joystic DOWN
 | PC1  | vioJOYleft       | not configured via CubeMX                     | Joystic LEFT
@@ -83,13 +83,13 @@ The example project can be re-configured to work on custom hardware. Refer to ["
 |:-------------|:-------------------------------------------------------------------------------------------------------------------|:----|:----|:----
 | USART3       | Asynchronous, Hardware Flow Control=off, Baud Rate: 115200 Bits/s, Word Length: 8 Bits, Parity: None, Stop Bits: 1 | no  | no  | ST-LINK Virtual COM port
 
-**STDIO** is routed to ST-LINK Virtual COM port (USART1)
+**STDIO** is routed to ST-LINK Virtual COM port (USART3)
 
 ### CMSIS-Driver mapping
 
 | CMSIS-Driver VIO  | Physical board hardware
 |:------------------|:-----------------------
-| vioBUTTON0        | Door Sensor (PC8)
+| vioBUTTON0        | Joystick SELECT, with define VIO_BUTTON_REMAP
 | vioJOYup          | Joystic UP (PC4) 
 | vioJOYdown        | Joystic DOWN (PC2) 
 | vioJOYleft        | Joystic LEFT (PC1) 

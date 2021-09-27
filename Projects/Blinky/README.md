@@ -13,7 +13,7 @@ Operation
 
  - At start the vioLED0 blinks in 1 sec interval.
 
- - The vioButton0 (door sense) changes the blink frequency and start/stops vioLED1.
+ - The vioBUTTON0 changes the blink frequency and start/stops vioLED1.
 
-The board hardware mapping of vioLED0, vioLED1, and vioButton0 depends on the 
+The board hardware mapping of vioLED0, vioLED1, and vioBUTTON0 depends on the 
 configuration of the CMSIS-Driver VIO.

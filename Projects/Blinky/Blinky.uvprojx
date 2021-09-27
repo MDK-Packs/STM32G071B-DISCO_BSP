@@ -337,7 +337,7 @@
             <v6Rtti>0</v6Rtti>
             <VariousControls>
               <MiscControls></MiscControls>
-              <Define></Define>
+              <Define>VIO_BUTTON_REMAP</Define>
               <Undefine></Undefine>
               <IncludePath></IncludePath>
             </VariousControls>
@@ -370,7 +370,7 @@
             <TextAddressRange>0x08000000</TextAddressRange>
             <DataAddressRange>0x20000000</DataAddressRange>
             <pXoBase></pXoBase>
-            <ScatterFile>.\Blinky.STM32G071B-DISCO.sct</ScatterFile>
+            <ScatterFile>.\stm32g071.sct</ScatterFile>
             <IncludeLibs></IncludeLibs>
             <IncludeLibsPath></IncludeLibsPath>
             <Misc></Misc>
@@ -411,7 +411,7 @@
           </Files>
         </Group>
         <Group>
-          <GroupName>STM32CubeMX:Project</GroupName>
+          <GroupName>STM32CubeMX</GroupName>
           <Files>
             <File>
               <FileName>STCubeGenerated.ioc</FileName>
@@ -509,13 +509,13 @@
         </targetInfos>
       </component>
       <component Cbundle="STM32G071B-DISCO" Cclass="Board Support" Cgroup="Drivers" Csub="Basic I/O" Cvendor="Keil" Cversion="1.2.1" condition="STM32G071B-DISCO BSP">
-        <package name="STM32G071B-DISCO_BSP" schemaVersion="1.7.2" url="https://github.com/MDK-Packs/Pack/raw/master/STM32G071B-DISCO_BSP/" vendor="Keil" version="1.0.1"/>
+        <package name="STM32G071B-DISCO_BSP" schemaVersion="1.7.2" url="https://github.com/MDK-Packs/Pack/raw/master/STM32G071B-DISCO_BSP/" vendor="Keil" version="1.0.0-dev0"/>
         <targetInfos>
           <targetInfo name="STM32G071B-DISCO"/>
         </targetInfos>
       </component>
       <component Capiversion="0.1.0" Cclass="CMSIS Driver" Cgroup="VIO" Csub="Board" Cvariant="STM32G071B-DISCO" Cvendor="Keil" Cversion="1.2.0" condition="STM32G071B-DISCO VIO">
-        <package name="STM32G071B-DISCO_BSP" schemaVersion="1.7.2" url="https://github.com/MDK-Packs/Pack/raw/master/STM32G071B-DISCO_BSP/" vendor="Keil" version="1.0.1"/>
+        <package name="STM32G071B-DISCO_BSP" schemaVersion="1.7.2" url="https://github.com/MDK-Packs/Pack/raw/master/STM32G071B-DISCO_BSP/" vendor="Keil" version="1.0.0-dev0"/>
         <targetInfos>
           <targetInfo name="STM32G071B-DISCO"/>
         </targetInfos>

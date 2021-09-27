@@ -1,8 +1,8 @@
 /******************************************************************************
  * @file     vio_STM32G071B-DISCO.c
  * @brief    Virtual I/O implementation for board STM32G071B-DISCO
- * @version  V1.0.0
- * @date     11. August 2021
+ * @version  V1.0.1
+ * @date     27. September 2021
  ******************************************************************************/
 /*
  * Copyright (c) 2021 Arm Limited (or its affiliates). All rights reserved.
@@ -23,10 +23,12 @@
  */
 
 /*! \page vio_STM32G071B-DISCO Physical I/O Mapping
+
 The table below lists the physical I/O mapping of this CMSIS-Driver VIO implementation.
+
 Virtual Resource  | Variable       | Physical Resource on STM32G071B-DISCO          |
 :-----------------|:---------------|:-----------------------------------------------|
-vioBUTTON0        | vioSignalIn.0  | GPIO C.8:  Door Sensor                         |
+vioBUTTON0        | vioSignalIn.0  | GPIO C.0:  Joystic SELECT (with define VIO_BUTTON_REMAP) |
 vioJOYup          | vioSignalIn.4  | GPIO C.4:  Joystic UP                          |
 vioJOYdown        | vioSignalIn.5  | GPIO C.2:  Joystic DOWN                        |
 vioJOYleft        | vioSignalIn.6  | GPIO C.1:  Joystic LEFT                        |
@@ -80,7 +82,7 @@ __USED vioAddrIPv6_t vioAddrIPv6[VIO_IPV6_ADDRESS_NUM];                 // Memor
 // Initialize test input, output.
 void vioInit (void) {
 #if !defined CMSIS_VOUT
-  // Add user variables here:
+// Add user variables here:
 
 #endif
 #if !defined CMSIS_VIN
@@ -106,8 +108,7 @@ void vioInit (void) {
 #endif
 
 #if !defined CMSIS_VIN
-  // Initialize button (door sense) and joystick pins
-  BSP_DOOR_Init(DOOR_MODE_GPIO);
+  // Initialize joystick pins
   BSP_JOY_Init(JOY_MODE_GPIO);
 #endif
 }
@@ -136,16 +137,8 @@ int32_t vioPrint (uint32_t level, const char *format, ...) {
   va_end(args);
 
 #if !defined CMSIS_VOUT
-  // forward formatted string to STDOUT, STDERR
-  if (level == vioLevelError) {
-    #if defined RTE_Compiler_IO_STDERR
-    fprintf(stderr, "%s\n\r", (char *)vioPrintMem[level]);
-    #endif
-  } else {
-    #if defined RTE_Compiler_IO_STDOUT
-    fprintf(stdout, "%s\n\r", (char *)vioPrintMem[level]);
-    #endif
-  }
+// Add user code here:
+
 #endif
 
   return (ret);
@@ -206,14 +199,16 @@ uint32_t vioGetSignal (uint32_t mask) {
 #endif
 
 #if !defined CMSIS_VIN
-  // Get input signals from button (door sense) and joystick
+  // Get input signals from joystick
+#if defined VIO_BUTTON_REMAP
   if ((mask & vioBUTTON0) != 0U) {
-    if (BSP_DOOR_GetState() == 1U) {
+    if (BSP_JOY_GetState() == (!JOY_NONE) ) {
       vioSignalIn |=  vioBUTTON0;
     } else {
       vioSignalIn &= ~vioBUTTON0;
     }
   }
+#endif
 
   if ((mask & vioJOYup) != 0U) {
     if (BSP_JOY_GetState() == JOY_UP) {
