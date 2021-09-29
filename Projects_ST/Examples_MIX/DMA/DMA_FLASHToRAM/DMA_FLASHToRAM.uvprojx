@@ -370,7 +370,7 @@
             <TextAddressRange>0x08000000</TextAddressRange>
             <DataAddressRange>0x20000000</DataAddressRange>
             <pXoBase></pXoBase>
-            <ScatterFile>.\DMA_FLASHToRAM.DMA_FLASHToRAM.sct</ScatterFile>
+            <ScatterFile>.\stm32g071.sct</ScatterFile>
             <IncludeLibs></IncludeLibs>
             <IncludeLibsPath></IncludeLibsPath>
             <Misc></Misc>
@@ -465,7 +465,7 @@
         </targetInfos>
       </component>
       <component Cbundle="STM32G071B-DISCO" Cclass="Board Support" Cgroup="Drivers" Csub="Basic I/O" Cvendor="Keil" Cversion="1.2.1" condition="STM32G071B-DISCO BSP">
-        <package name="STM32G071B-DISCO_BSP" schemaVersion="1.7.2" url="https://github.com/MDK-Packs/Pack/raw/master/STM32G071B-DISCO_BSP/" vendor="Keil" version="1.0.1"/>
+        <package name="STM32G071B-DISCO_BSP" schemaVersion="1.7.2" url="https://github.com/MDK-Packs/Pack/raw/master/STM32G071B-DISCO_BSP/" vendor="Keil" version="1.0.0"/>
         <targetInfos>
           <targetInfo name="DMA_FLASHToRAM"/>
         </targetInfos>

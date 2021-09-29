@@ -7,7 +7,7 @@
   <repository type="git">https://github.com/MDK-Packs/STM32G071B-DISCO_BSP.git</repository>
 
   <releases>
-    <release version="1.0.0-dev1" date="2021-09-27">
+    <release version="1.0.0">
       Board description and documentation for STM32G071B-DISCO
       Synchronized with STM32CubeG0 Firmware Package version V1.5.0
       Drivers:

@@ -20,7 +20,7 @@
 
   <target Bname="STM32G071B-DISCO" Bvendor="STMicroelectronics" Bversion="Rev.C" Ddsp="NO_DSP" Dendian="Little-endian" Dfpu="NO_FPU" Dmve="NO_MVE" Dname="STM32G071RBTx" Dsecure="Non-secure" Dtz="NO_TZ" Dvendor="STMicroelectronics:13">
     <output intdir="./Objects/" name="FLASH_EraseProgram" outdir="./Objects/" type="exe"/>
-    <ldflags add="--strict --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols --info sizes --info totals --info unused --info veneers --entry=Reset_Handler" compiler="AC6" file="./FLASH_EraseProgram.FLASH_EraseProgram.sct"/>
+    <ldflags add="--strict --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols --info sizes --info totals --info unused --info veneers --entry=Reset_Handler" compiler="AC6" file="./stm32g071.sct"/>
     <cflags add="-O1 -Wno-documentation -Wno-documentation-unknown-command -Wno-license-management -Wno-missing-noreturn -Wno-missing-prototypes -Wno-missing-variable-declarations -Wno-nonportable-include-path -Wno-packed -Wno-parentheses-equality -Wno-reserved-id-macro -Wno-sign-conversion -Wno-unused-macros -ffunction-sections -fno-rtti -fshort-enums -fshort-wchar -funsigned-char -gdwarf-4 -std=c99 -xc" compiler="AC6"/>
     <asflags add="-gdwarf-4 -masm=auto" compiler="AC6"/>
     <includes/>
