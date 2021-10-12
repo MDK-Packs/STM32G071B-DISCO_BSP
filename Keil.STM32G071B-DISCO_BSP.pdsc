@@ -7,6 +7,9 @@
   <repository type="git">https://github.com/MDK-Packs/STM32G071B-DISCO_BSP.git</repository>
 
   <releases>
+    <release version="1.0.1-dev0">
+      Update Platform example (blocking stdin_getchar in stdio retarget)
+    </release>
     <release version="1.0.0" date="2021-09-29">
       Board description and documentation for STM32G071B-DISCO
       Synchronized with STM32CubeG0 Firmware Package version V1.5.0
