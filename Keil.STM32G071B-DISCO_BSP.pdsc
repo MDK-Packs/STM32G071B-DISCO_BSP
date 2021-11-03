@@ -7,6 +7,10 @@
   <repository type="git">https://github.com/MDK-Packs/STM32G071B-DISCO_BSP.git</repository>
 
   <releases>
+    <release version="1.0.1-dev1">
+      Example projects:
+      - Update ported ST example names, descriptions
+    </release>
     <release version="1.0.1-dev0">
       Update Platform example (blocking stdin_getchar in stdio retarget)
     </release>
@@ -251,8 +255,8 @@
       </attributes>
     </example-->
 
-    <example name="Examples: CORTEXM_ModePrivilege" doc="README.md" folder="Projects_ST/Examples/Cortex/CORTEXM_ModePrivilege">
-      <description>How to modify the Thread mode privilege access and stack. Thread mode is entered on reset or when returning from an exception.</description>
+    <example name="CORTEXM_ModePrivilege" doc="README.md" folder="Projects_ST/Examples/Cortex/CORTEXM_ModePrivilege">
+      <description>CORTEXM_ModePrivilege example (ported from STM32Cube G0 FW pack, Examples).</description>
       <board name="STM32G071B-DISCO" vendor="STMicroelectronics"/>
       <project>
         <environment name="uv" load="CORTEXM_ModePrivilege.uvprojx"/>
@@ -263,8 +267,8 @@
         <category>Getting Started</category>
       </attributes>
     </example>
-    <example name="Examples: CORTEXM_MPU" doc="README.md" folder="Projects_ST/Examples/Cortex/CORTEXM_MPU">
-      <description>Presentation of the MPU feature. This example configures a memory area as privileged read-only, and attempts to perform read and write operations in different modes.</description>
+    <example name="CORTEXM_MPU" doc="README.md" folder="Projects_ST/Examples/Cortex/CORTEXM_MPU">
+      <description>CORTEXM_MPU example (ported from STM32Cube G0 FW pack, Examples).</description>
       <board name="STM32G071B-DISCO" vendor="STMicroelectronics"/>
       <project>
         <environment name="uv" load="CORTEXM_MPU.uvprojx"/>
@@ -275,8 +279,8 @@
         <category>Getting Started</category>
       </attributes>
     </example>
-    <example name="Examples: CORTEXM_ProcessStack" doc="README.md" folder="Projects_ST/Examples/Cortex/CORTEXM_ProcessStack">
-      <description>How to modify the Thread mode stack. Thread mode is entered on reset, and can be entered as a result of an exception return.</description>
+    <example name="CORTEXM_ProcessStack" doc="README.md" folder="Projects_ST/Examples/Cortex/CORTEXM_ProcessStack">
+      <description>CORTEXM_ProcessStack example (ported from STM32Cube G0 FW pack, Examples).</description>
       <board name="STM32G071B-DISCO" vendor="STMicroelectronics"/>
       <project>
         <environment name="uv" load="CORTEXM_ProcessStack.uvprojx"/>
@@ -287,8 +291,8 @@
         <category>Getting Started</category>
       </attributes>
     </example>
-    <example name="Examples: CORTEXM_SysTick" doc="README.md" folder="Projects_ST/Examples/Cortex/CORTEXM_SysTick">
-      <description>How to use the default SysTick configuration with a 1 ms timebase to toggle LEDs.</description>
+    <example name="CORTEXM_SysTick" doc="README.md" folder="Projects_ST/Examples/Cortex/CORTEXM_SysTick">
+      <description>CORTEXM_SysTick example (ported from STM32Cube G0 FW pack, Examples).</description>
       <board name="STM32G071B-DISCO" vendor="STMicroelectronics"/>
       <project>
         <environment name="uv" load="CORTEXM_SysTick.uvprojx"/>
@@ -299,8 +303,8 @@
         <category>Getting Started</category>
       </attributes>
     </example>
-    <example name="Examples: CRC_Bytes_Stream_7bit_CRC" doc="README.md" folder="Projects_ST/Examples/CRC/CRC_Bytes_Stream_7bit_CRC">
-      <description>How to configure the CRC using the HAL API. The CRC (cyclic redundancy check) calculation unit computes 7-bit CRC codes derived from buffers of 8-bit data (bytes). The user-defined generating polynomial is manually set to 0x65, that is, X^7 + X^6 + X^5 + X^2 + 1, as used in the Train Communication Network, IEC 60870-5[17].</description>
+    <example name="CRC_Bytes_Stream_7bit_CRC" doc="README.md" folder="Projects_ST/Examples/CRC/CRC_Bytes_Stream_7bit_CRC">
+      <description>CRC_Bytes_Stream_7bit_CRC example (ported from STM32Cube G0 FW pack, Examples).</description>
       <board name="STM32G071B-DISCO" vendor="STMicroelectronics"/>
       <project>
         <environment name="uv" load="CRC_Bytes_Stream_7bit_CRC.uvprojx"/>
@@ -311,8 +315,8 @@
         <category>Getting Started</category>
       </attributes>
     </example>
-    <example name="Examples: CRC_Data_Reversing_16bit_CRC" doc="README.md" folder="Projects_ST/Examples/CRC/CRC_Data_Reversing_16bit_CRC">
-      <description>How to configure the CRC using the HAL API. The CRC (cyclic redundancy check) calculation unit computes a 16-bit CRC code derived from a buffer of 8-bit data (bytes). Input and output data reversal features are enabled. The user-defined generating polynomial is manually set to 0x1021, that is, X^16 + X^12 + X^5 + 1 which is the CRC-CCITT generating polynomial.</description>
+    <example name="CRC_Data_Reversing_16bit_CRC" doc="README.md" folder="Projects_ST/Examples/CRC/CRC_Data_Reversing_16bit_CRC">
+      <description>CRC_Data_Reversing_16bit_CRC example (ported from STM32Cube G0 FW pack, Examples).</description>
       <board name="STM32G071B-DISCO" vendor="STMicroelectronics"/>
       <project>
         <environment name="uv" load="CRC_Data_Reversing_16bit_CRC.uvprojx"/>
@@ -323,8 +327,8 @@
         <category>Getting Started</category>
       </attributes>
     </example>
-    <example name="Examples: CRC_Example" doc="README.md" folder="Projects_ST/Examples/CRC/CRC_Example">
-      <description>How to configure the CRC using the HAL API. The CRC (cyclic redundancy check) calculation unit computes the CRC code of a given buffer of 32-bit data words, using a fixed generator polynomial (0x4C11DB7).</description>
+    <example name="CRC_Example" doc="README.md" folder="Projects_ST/Examples/CRC/CRC_Example">
+      <description>CRC_Example example (ported from STM32Cube G0 FW pack, Examples).</description>
       <board name="STM32G071B-DISCO" vendor="STMicroelectronics"/>
       <project>
         <environment name="uv" load="CRC_Example.uvprojx"/>
@@ -335,8 +339,8 @@
         <category>Getting Started</category>
       </attributes>
     </example>
-    <example name="Examples: CRC_UserDefinedPolynomial" doc="README.md" folder="Projects_ST/Examples/CRC/CRC_UserDefinedPolynomial">
-      <description>How to configure the CRC using the HAL API. The CRC (cyclic redundancy check) calculation unit computes the 8-bit CRC code for a given buffer of 32-bit data words, based on a user-defined generating polynomial.</description>
+    <example name="CRC_UserDefinedPolynomial" doc="README.md" folder="Projects_ST/Examples/CRC/CRC_UserDefinedPolynomial">
+      <description>CRC_UserDefinedPolynomial example (ported from STM32Cube G0 FW pack, Examples).</description>
       <board name="STM32G071B-DISCO" vendor="STMicroelectronics"/>
       <project>
         <environment name="uv" load="CRC_UserDefinedPolynomial.uvprojx"/>
@@ -347,8 +351,8 @@
         <category>Getting Started</category>
       </attributes>
     </example>
-    <example name="Examples: DMA_FLASHToRAM" doc="README.md" folder="Projects_ST/Examples/DMA/DMA_FLASHToRAM">
-      <description>How to use a DMA to transfer a word data buffer from Flash memory to embedded SRAM through the HAL API.</description>
+    <example name="DMA_FLASHToRAM" doc="README.md" folder="Projects_ST/Examples/DMA/DMA_FLASHToRAM">
+      <description>DMA_FLASHToRAM example (ported from STM32Cube G0 FW pack, Examples).</description>
       <board name="STM32G071B-DISCO" vendor="STMicroelectronics"/>
       <project>
         <environment name="uv" load="DMA_FLASHToRAM.uvprojx"/>
@@ -359,8 +363,8 @@
         <category>Getting Started</category>
       </attributes>
     </example>
-    <example name="Examples: FLASH_EraseProgram" doc="README.md" folder="Projects_ST/Examples/FLASH/FLASH_EraseProgram">
-      <description>How to configure and use the FLASH HAL API to erase and program the internal Flash memory.</description>
+    <example name="FLASH_EraseProgram" doc="README.md" folder="Projects_ST/Examples/FLASH/FLASH_EraseProgram">
+      <description>FLASH_EraseProgram example (ported from STM32Cube G0 FW pack, Examples).</description>
       <board name="STM32G071B-DISCO" vendor="STMicroelectronics"/>
       <project>
         <environment name="uv" load="FLASH_EraseProgram.uvprojx"/>
@@ -371,8 +375,8 @@
         <category>Getting Started</category>
       </attributes>
     </example>
-    <example name="Examples: GPIO_IOToggle" doc="README.md" folder="Projects_ST/Examples/GPIO/GPIO_IOToggle">
-      <description>	How to configure and use GPIOs through the HAL API.</description>
+    <example name="GPIO_IOToggle" doc="README.md" folder="Projects_ST/Examples/GPIO/GPIO_IOToggle">
+      <description>GPIO_IOToggle example (ported from STM32Cube G0 FW pack, Examples).</description>
       <board name="STM32G071B-DISCO" vendor="STMicroelectronics"/>
       <project>
         <environment name="uv" load="GPIO_IOToggle.uvprojx"/>
@@ -383,8 +387,8 @@
         <category>Getting Started</category>
       </attributes>
     </example>
-    <example name="Examples: IWDG_Reset" doc="README.md" folder="Projects_ST/Examples/IWDG/IWDG_Reset">
-      <description>How to handle the IWDG reload counter and simulate a software fault that generates an MCU IWDG reset after a preset laps of time.</description>
+    <example name="IWDG_Reset" doc="README.md" folder="Projects_ST/Examples/IWDG/IWDG_Reset">
+      <description>IWDG_Reset example (ported from STM32Cube G0 FW pack, Examples).</description>
       <board name="STM32G071B-DISCO" vendor="STMicroelectronics"/>
       <project>
         <environment name="uv" load="IWDG_Reset.uvprojx"/>
@@ -395,8 +399,8 @@
         <category>Getting Started</category>
       </attributes>
     </example>
-    <example name="Examples: IWDG_WindowMode" doc="README.md" folder="Projects_ST/Examples/IWDG/IWDG_WindowMode">
-      <description>How to periodically update the IWDG reload counter and simulate a software fault that generates an MCU IWDG reset after a preset laps of time.</description>
+    <example name="IWDG_WindowMode" doc="README.md" folder="Projects_ST/Examples/IWDG/IWDG_WindowMode">
+      <description>IWDG_WindowMode example (ported from STM32Cube G0 FW pack, Examples).</description>
       <board name="STM32G071B-DISCO" vendor="STMicroelectronics"/>
       <project>
         <environment name="uv" load="IWDG_WindowMode.uvprojx"/>
@@ -407,8 +411,8 @@
         <category>Getting Started</category>
       </attributes>
     </example>
-    <example name="Examples: PWR_LPRUN" doc="README.md" folder="Projects_ST/Examples/PWR/PWR_LPRUN">
-      <description>How to enter and exit the Low-power run mode.</description>
+    <example name="PWR_LPRUN" doc="README.md" folder="Projects_ST/Examples/PWR/PWR_LPRUN">
+      <description>PWR_LPRUN example (ported from STM32Cube G0 FW pack, Examples).</description>
       <board name="STM32G071B-DISCO" vendor="STMicroelectronics"/>
       <project>
         <environment name="uv" load="PWR_LPRUN.uvprojx"/>
@@ -419,8 +423,8 @@
         <category>Getting Started</category>
       </attributes>
     </example>
-    <example name="Examples: RCC_SwitchClock" doc="README.md" folder="Projects_ST/Examples/RCC/RCC_SwitchClock">
-      <description>Switch of the system clock (SYSCLK) from Low frequency clock to high frequency clock, using the RCC HAL API.</description>
+    <example name="RCC_SwitchClock" doc="README.md" folder="Projects_ST/Examples/RCC/RCC_SwitchClock">
+      <description>RCC_SwitchClock example (ported from STM32Cube G0 FW pack, Examples).</description>
       <board name="STM32G071B-DISCO" vendor="STMicroelectronics"/>
       <project>
         <environment name="uv" load="RCC_SwitchClock.uvprojx"/>
@@ -431,8 +435,8 @@
         <category>Getting Started</category>
       </attributes>
     </example>
-    <example name="Examples: WWDG_Example" doc="README.md" folder="Projects_ST/Examples/WWDG/WWDG_Example">
-      <description>Configuration of the HAL API to periodically update the WWDG counter and simulate a software fault that generates an MCU WWDG reset when a predefined time period has elapsed.</description>
+    <example name="WWDG_Example" doc="README.md" folder="Projects_ST/Examples/WWDG/WWDG_Example">
+      <description>WWDG_Example example (ported from STM32Cube G0 FW pack, Examples).</description>
       <board name="STM32G071B-DISCO" vendor="STMicroelectronics"/>
       <project>
         <environment name="uv" load="WWDG_Example.uvprojx"/>
@@ -444,8 +448,8 @@
       </attributes>
     </example>
 
-    <example name="Examples_LL: DMA_CopyFromFlashToMemory_Init" doc="README.md" folder="Projects_ST/Examples_LL/DMA/DMA_CopyFromFlashToMemory_Init">
-      <description>How to use a DMA channel to transfer a word data buffer from Flash memory to embedded SRAM. The peripheral initialization uses LL initialization functions to demonstrate LL init usage.</description>
+    <example name="DMA_CopyFromFlashToMemory_Init" doc="README.md" folder="Projects_ST/Examples_LL/DMA/DMA_CopyFromFlashToMemory_Init">
+      <description>DMA_CopyFromFlashToMemory_Init example (ported from STM32Cube G0 FW pack, Examples LL).</description>
       <board name="STM32G071B-DISCO" vendor="STMicroelectronics"/>
       <project>
         <environment name="uv" load="DMA_CopyFromFlashToMemory_Init.uvprojx"/>
@@ -457,8 +461,8 @@
       </attributes>
     </example>
 
-    <example name="Examples_MIX: CRC_PolynomialUpdate" doc="README.md" folder="Projects_ST/Examples_MIX/CRC/CRC_PolynomialUpdate">
-      <description>How to use the CRC peripheral through the STM32G0xx CRC HAL and LL API.</description>
+    <example name="CRC_PolynomialUpdate" doc="README.md" folder="Projects_ST/Examples_MIX/CRC/CRC_PolynomialUpdate">
+      <description>CRC_PolynomialUpdate example (ported from STM32Cube G0 FW pack, Examples MIX).</description>
       <board name="STM32G071B-DISCO" vendor="STMicroelectronics"/>
       <project>
         <environment name="uv" load="CRC_PolynomialUpdate.uvprojx"/>
@@ -469,8 +473,8 @@
         <category>Getting Started</category>
       </attributes>
     </example>
-    <example name="Examples_MIX: DMA_FLASHToRAM" doc="README.md" folder="Projects_ST/Examples_MIX/DMA/DMA_FLASHToRAM">
-      <description>How to use a DMA to transfer a word data buffer from Flash memory to embedded SRAM through the STM32G0xx DMA HAL and LL API. The LL API is used for performance improvement.</description>
+    <example name="DMA_FLASHToRAM (MIX)" doc="README.md" folder="Projects_ST/Examples_MIX/DMA/DMA_FLASHToRAM">
+      <description>DMA_FLASHToRAM (MIX) example (ported from STM32Cube G0 FW pack, Examples MIX).</description>
       <board name="STM32G071B-DISCO" vendor="STMicroelectronics"/>
       <project>
         <environment name="uv" load="DMA_FLASHToRAM.uvprojx"/>
