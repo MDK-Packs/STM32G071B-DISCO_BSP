@@ -1,11 +1,12 @@
 /******************************************************************************
  * @file     vio_STM32G071B-DISCO.c
  * @brief    Virtual I/O implementation for board STM32G071B-DISCO
- * @version  V1.0.1
- * @date     27. September 2021
+ * @version  V1.2.0
+ * @date     9. November 2022
  ******************************************************************************/
 /*
- * Copyright (c) 2021 Arm Limited (or its affiliates). All rights reserved.
+ * Copyright (c) 2021-2022 Arm Limited (or its affiliates).
+ * All rights reserved.
  *
  * SPDX-License-Identifier: Apache-2.0
  *
@@ -113,7 +114,7 @@ void vioInit (void) {
 #endif
 }
 
-// Print formated string to test terminal.
+// Print formatted string to test terminal.
 int32_t vioPrint (uint32_t level, const char *format, ...) {
   va_list args;
   int32_t ret;
@@ -367,7 +368,7 @@ void vioSetIPv4 (uint32_t id, vioAddrIPv4_t addrIPv4) {
 // Get IPv4 address input.
 vioAddrIPv4_t vioGetIPv4 (uint32_t id) {
   uint32_t index = id;
-  vioAddrIPv4_t addrIPv4 = {0U, 0U, 0U, 0U};
+  vioAddrIPv4_t addrIPv4 = { {0U, 0U, 0U, 0U} };
 #if !defined CMSIS_VIN
 // Add user variables here:
 
@@ -411,8 +412,8 @@ void vioSetIPv6 (uint32_t id, vioAddrIPv6_t addrIPv6) {
 // Get IPv6 address input.
 vioAddrIPv6_t vioGetIPv6 (uint32_t id) {
   uint32_t index = id;
-  vioAddrIPv6_t addrIPv6 = {0U, 0U, 0U, 0U, 0U, 0U, 0U, 0U,
-                            0U, 0U, 0U, 0U, 0U, 0U, 0U, 0U};
+  vioAddrIPv6_t addrIPv6 = { {0U, 0U, 0U, 0U, 0U, 0U, 0U, 0U,
+                              0U, 0U, 0U, 0U, 0U, 0U, 0U, 0U} };
 #if !defined CMSIS_VIN
 // Add user variables here:
 
