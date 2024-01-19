@@ -12,6 +12,14 @@
       Drivers:
       - CMSIS-Driver VIO:
       -- Update VIO to API 1.0.0
+      Example projects:
+      - Update projects to CMSIS 6
+      - Migrate Event Recorder component (from Compiler to CMSIS-View pack)
+      - Remove .cprj file
+      - Platform:
+      -- Migrate STDIO components (from Compiler to CMSIS-Compiler pack)
+      -- Update README.md
+      -- Correct layer annotation
     </release>
     <release version="1.0.1-dev3">
       Pack Description:
