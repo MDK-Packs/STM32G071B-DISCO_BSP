@@ -531,7 +531,7 @@
           <targetInfo name="CRC_Data_Reversing_16bit_CRC"/>
         </targetInfos>
       </component>
-      <component Cclass="Device" Cgroup="Startup" Cvendor="Keil" Cversion="1.6.0" condition="STM32G0 CMSIS">
+      <component Cclass="Device" Cgroup="Startup" Cvendor="Keil" Cversion="1.4.2" condition="STM32G0 CMSIS">
         <package name="STM32G0xx_DFP" schemaVersion="1.7.28" url="https://www.keil.com/pack/" vendor="Keil" version="1.5.0"/>
         <targetInfos>
           <targetInfo name="CRC_Data_Reversing_16bit_CRC"/>
@@ -541,7 +541,7 @@
     <files>
       <file attr="config" category="source" condition="STM32G071 ARMCC" name="Drivers\CMSIS\Device\ST\STM32G0xx\Source\Templates\arm\startup_stm32g071xx.s" version="1.6.0">
         <instance index="0">RTE\Device\STM32G071RBTx\startup_stm32g071xx.s</instance>
-        <component Cclass="Device" Cgroup="Startup" Cvendor="Keil" Cversion="1.6.0" condition="STM32G0 CMSIS"/>
+        <component Cclass="Device" Cgroup="Startup" Cvendor="Keil" Cversion="1.4.2" condition="STM32G0 CMSIS"/>
         <package name="STM32G0xx_DFP" schemaVersion="1.7.28" url="https://www.keil.com/pack/" vendor="Keil" version="1.5.0"/>
         <targetInfos>
           <targetInfo name="CRC_Data_Reversing_16bit_CRC"/>
@@ -549,7 +549,7 @@
       </file>
       <file attr="config" category="source" name="Drivers\CMSIS\Device\ST\STM32G0xx\Source\Templates\system_stm32g0xx.c" version="1.6.0">
         <instance index="0">RTE\Device\STM32G071RBTx\system_stm32g0xx.c</instance>
-        <component Cclass="Device" Cgroup="Startup" Cvendor="Keil" Cversion="1.6.0" condition="STM32G0 CMSIS"/>
+        <component Cclass="Device" Cgroup="Startup" Cvendor="Keil" Cversion="1.4.2" condition="STM32G0 CMSIS"/>
         <package name="STM32G0xx_DFP" schemaVersion="1.7.28" url="https://www.keil.com/pack/" vendor="Keil" version="1.5.0"/>
         <targetInfos>
           <targetInfo name="CRC_Data_Reversing_16bit_CRC"/>
