@@ -62,6 +62,7 @@ extern void app_initialize (void);
 #define VCP_RX_GPIO_Port GPIOC
 #define VCP_TX_Pin GPIO_PIN_10
 #define VCP_TX_GPIO_Port GPIOC
+
 /* USER CODE BEGIN Private defines */
 
 /* USER CODE END Private defines */
@@ -71,5 +72,3 @@ extern void app_initialize (void);
 #endif
 
 #endif /* __MAIN_H */
-
-/************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/
